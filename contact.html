@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fancyStyleSheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title></title>
+</head>
+<body>
+<!--between comments necessary for the sticky navbar-->
+<div class="header"><h2>Contact</h2></div>
+<div id="navbar">
+  <a href="home.html">Home</a>
+  <a href="media.html">Examples</a>
+  <a href="schegule.html">Timeline</a>
+  <a class="active" href="contact.html">Contact</a>
+  <div class="dropdown">
+	<button class="dropbtn">Artists <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+	<a href ="AlexanderRodchenko.html">Alexander Rodchenko</a>
+	<a href ="ElLissitzky.html">Lazar Lissitzky</a>
+	</div>
+	</div>
+</div>
+<!--above necessary for navbar-->
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+
+    <div class="column">
+	  <form method="post" action='<?php echo htmlspecialchars(action_page.php["PHP_SELF"]);?>'>
+        <label for="fname">First Name</label>
+       <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

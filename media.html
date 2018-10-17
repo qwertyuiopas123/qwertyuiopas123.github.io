@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fancyStyleSheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Construtivism Examples</title>
+</head>
+<body>
+<!--between comments necessary for the sticky navbar-->
+<div class="header"><h2>Examples of Constructivism</h2></div>
+<div id="navbar">
+  <a href="home.html">Home</a>
+  <a class="active" href="media.html">Examples</a>
+  <a href="schegule.html">Timeline</a>
+    <a href="contact.html">Contact</a>
+  <div class="dropdown">
+	<button class="dropbtn">Artists <i class="fa fa-caret-down"></i>
+	</button>
+<div class="dropdown-content">
+	<a href ="AlexanderRodchenko.html">Alexander Rodchenko</a>
+	<a href ="ElLissitzky.html">Lazar LissitzkyLazar Lissitzky</a>
+	</div>
+	</div>
+</div>
+<!--above necessary for navbar-->
+<div class="content">
+
+<table>
+
+<tr>
+<td>
+<ul>
+<li><strong>Title</strong></li>
+<li>Dobrolet (Poster for a Russian state airline)</li>
+<li><strong>Artist</strong></li>
+<li>Alexander Rodchenko</li>
+<li><strong>Date</strong></li>
+<li>1923</li>
+<li><strong>Medium</strong></li>
+<li>Offset Lithograph</li>
+<li><strong>Dimensions</strong></li>
+<li>13 3/4 x 17 7/8" (35 x 45.4 cm)</li>
+<li><em>This Piece is in the MOmA collection</em></li>
+</ul>
+</td>
+<td>
+<img id="plane" src="images/rodchenkoPlane.jpg" title="Rodchenko Poster for a Russian State Airline (1923)" class="object">
+</td>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li><strong>Title</strong></li>
+<li>"A Yankee in Petrograd" Vol. 1 Revenge's Mask by Jim Dollar (Marietta Saginyan)</li>
+<li><strong>Artist</strong></li>
+<li>Alexander Rodchenko</li>
+<li><strong>Date</strong></li>
+<li>1924</li>
+<li><strong>Medium</strong></li>
+<li>Gravure</li>
+<li><strong>Dimensions</strong></li>
+<li>7 x 5" (17.9 x 12.7 cm)</li>
+<li><em>This Piece is in the MOmA collection</em></li>
+</ul>
+</td>
+<td>
+<img src="images/rodchenkoPiece2.jpg" alt="'A Yankee in Petrograd' Vol. 1 Revenge's Mask by Jim Dollar (Marietta Saginyan)" class="object">
+</td>
+</tr>
+
+<tr>
+<td>
+<ul>
+<li><strong>Title</strong></li>
+<li>Beat the Whites with Red Wedge</li>
+<li><strong>Artist</strong></li>
+<li>El Lissitzky</li>
+<li><strong>Date</strong></li>
+<li>1919</li>
+</ul>
+</td>
+<td><img id="redWedge" src="images/beatWhiteTriange.jpg" alt="Beat the Whites with Red Wedge" class="object"></td>
+</tr>
+
+<tr>
+<ul>
+<td>
+<li><strong>Title</strong></li>
+<li>Cover Art for Veshch</li>
+<li><strong>Artist</strong></li>
+<li>El Lissitzky</li>
+<li><strong>Date</strong></li>
+<li>1921-1922</li>
+</ul>
+</td>
+<td><img id="veshch" src="images/Veshch.jpeg" alt="Veshch Cover art" class="object"></td>
+</tr>
+
+<tr>
+<ul>
+<td>
+<li><strong>Title</strong></li>
+<li>Book Cover for <em>The Isms Of Art</em></li>
+<li><strong>Artist</strong></li>
+<li>El Lissitzky</li>
+<li><strong>Date</strong></li>
+<li>1924</li>
+</ul>
+</td>
+<td><img id="Isms" src="images/theIsmsOfArt.jpg" alt="The Isms Of Art Cover art" class="object"></td>
+</tr>
+
+</table>
+
+</div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fancyStyleSheet.css">
+<link rel="stylesheet" type="text/css" href="timelineStyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title></title>
+</head>
+<body>
+<!--between comments necessary for the sticky navbar-->
+<div class="header"><h2>Home</h2></div>
+<div id="navbar">
+  <a href="home.html">Home</a>
+  <a href="media.html">Examples</a>
+  <a class="active" href="schegule.html">Timeline</a>
+    <a href="contact.html">Contact</a>
+  <div class="dropdown">
+	<button class="dropbtn">Artists <i class="fa fa-caret-down"></i>
+	</button>
+<div class="dropdown-content">
+	<a href ="AlexanderRodchenko.html">Alexander Rodchenko</a>
+	<a href ="ElLissitzky.html">Lazar Lissitzky</a>
+	</div>
+	</div>
+</div>
+<!--above necessary for navbar-->
+<div class="timeline">
+  <div class="container left">
+    <div class="timelineContent">
+      <h2>1890</h2>
+      <p>El Lissitzky is born</p>
+     </div>
+  </div>
+  <div class="container right">
+    <div class="timelineContent">
+      <h2>1891</h2>
+      <p>Rodcheno is Born</p>
+     </div>
+  </div>
+  <div class="container left">
+    <div class="timelineContent">
+      <h2>1918</h2>
+      <p>Gustav - Political Photo Montage
+	  <br>
+	  <em>Invention of the sub-genre of political photo montage</em>
+	  <br>
+	  El Lissitzky makes his first constructivist posters</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="timelineContent">
+      <h2>1919</h2>
+      <p>EL Lissitzky begins teaching at Vitebsk</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="timelineContent">
+      <h2>1921</h2>
+      <p>Rodchenko begins graphic design career</p>
+     </div>
+  </div>
+    <div class="container right">
+    <div class="timelineContent">
+      <h2>1923</h2>
+      <p>Rodchenko publishes first photo montage</p>
+     </div>
+  </div>
+    <div class="container left">
+    <div class="timelineContent">
+      <h2>1925</h2>
+      <p>Lissitzky makes 'The Constructor'</p>
+     </div>
+  </div>
+</div>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

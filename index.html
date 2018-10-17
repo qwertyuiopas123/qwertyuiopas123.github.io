@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fancyStyleSheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home of Constructivism</title>
+</head>
+<body>
+<!--between comments necessary for the sticky navbar-->
+<div class="header"><h2>Home</h2></div>
+<div id="navbar">
+  <a class="active" href="home.html">Home</a>
+  <a href="media.html">Examples</a>
+  <a href="schegule.html">Timeline</a>
+    <a href="contact.html">Contact</a>
+  <div class="dropdown">
+	<button class="dropbtn">Artists <i class="fa fa-caret-down"></i>
+	</button>
+<div class="dropdown-content">
+	<a href ="AlexanderRodchenko.html">Alexander Rodchenko</a>
+	<a href ="ElLissitzky.html">Lazar Lissitzky</a>
+	</div>
+	</div>
+</div>
+<!--above necessary for navbar-->
+<div class="content">
+<!-- Use a button to open the snackbar -->
+<!--<button onclick="itsASnackBar()">Show Snackbar</button>
+
+<!-- The actual snackbar -->
+<!--<div id="snackbar">Some text some message..</div>
+
+<!--a style or movement in which assorted mechanical objects are combined into abstract mobile structural forms. The movement originated in Russia in the 1920s and has influenced many aspects of modern architecture and design.-->
+<h3>What is Constructivism?</h3>
+<div class="container">
+<img class="object" title="El Lissitzky Object Magazine Cover" src="images/Veshch.jpeg" alt="El Lissitzky Object Magazine Cover" id="objectCover1" >
+</div>
+<p>Constructivism is an artistic movement that happened in Russia during the 1920s and influenced modern design and architecture.</p>
+<p>Constructivism was started in 1913 by Vladimir Tatlin. He was opposed to the idea of "automous art" and he wanted to construct art. The movement was in favor of art as a practice for social purposes (ie. creating posters for the government). Constructivism had a great inmpact on modern art movements of the 20th centuary. It influenced major movements such as the Bauhaus and De Stijil movements (to the left see example of El Lissitzky's construcivism work).
+<br>
+<br>
+Some of the major elements of construcivism where <strong>heavy sans serif typefaces</strong> with few, but striking colors (ie. red, black, and occasionaly yellow). Much of the work included in this movement was designed to be <strong>striking and powerful.</strong> These pieces were designed to catch the eye of the viewer and be very dramatic. The design styles were originally intended for political messages, but have seeped into product advertisements and posters, including book covers and page design.</p>
+<p>The major leaders of this movement are, Vladimir Tatlin, Alexander Rodchenko, and Lazar Lissitzky. This is in no particular order, and more informaition about them can be found in the artists dropdown.</p>
+<p>The term construcivism was coined by Kasmir Malevich in refrence to the work of Alexander Rodchenko.</p>
+</div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {stickyScroll()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyScroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function itsASnackBar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+</body>
+</html>
