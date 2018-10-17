@@ -28,7 +28,13 @@ img {
 	width:26%;
 }
 #veshch{
-	width:30%
+	width:30%;
+}
+#rodchenko{
+	width:30%;
+}
+#lissitzky{
+	width:20%;
 }
 #navbar {
   overflow: hidden;
@@ -63,10 +69,13 @@ img {
 
 .sticky {
   position: fixed;
-  top: 0;
+  top:0;
   width: 100%;
 }
-
+.stickyDropdown{
+	position:fixed;
+	top:25;
+}
 .sticky + .content {
   padding-top: 30px;
 }
@@ -98,7 +107,7 @@ img {
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
