@@ -1,7 +1,9 @@
 <html>
 <body>
 
-  welcome <?php echo $_POST["name"];?>
+
+<?php echo $_POST["name"]; ?><br>
+
 
 </body>
 </html>

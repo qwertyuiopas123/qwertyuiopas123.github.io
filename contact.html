@@ -29,7 +29,7 @@
   </div>
 
     <div class="column">
-	  <form method="post" action="action_page.php">
+	  <form method="post" action='<?php echo htmlspecialchars(action_page.php);?>'>
         <label for="fname">First Name</label>
        <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">Last Name</label>
@@ -47,7 +47,11 @@
     </div>
 
 
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 <script>
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
